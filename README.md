@@ -24,6 +24,7 @@ laporan tersebut. Laporan yang diminta berupa :
   Command ```NR > 1``` digunakan untuk menyimpan jumlah _record_ yang dibaca mulai dari kolom kedua dikarenakan kolom pertama merupakan header dari setiap kolom. Kolom yang dibaca adalah kolom dari __region__ dan __profit__. <br>
   Command ```{SUM[$13] +=$21}``` menunjukkan bahwa __variabel SUM__ dibuat untuk menyimpan ```+=$21``` __jumlah profit__ (kolom ke-21) dari  ```[$13]``` __per region__ (kolom ke-13). <br>
   Setelah proses ```awk``` selesai, maka command ```END{for (j in SUM) print j, SUM[j]}``` dieksekusi agar dalam program tercatat semua __region__ disertai dengan __jumlah profit per region__. <br>
-  ```Sample-Superstore.tsv``` menunjukkan bahwa proses ```awk``` dieksekusi untuk data yang ada di dalam file bernama _Sample-Superstore.tsv_.
+  ```Sample-Superstore.tsv``` menunjukkan bahwa proses ```awk``` dieksekusi untuk data yang ada di dalam file bernama _Sample-Superstore.tsv_. <br>
+  Setelah penyaringan data __region__ dan __jumlah profit per region__ telah didapatkan, proses dilanjutkan dengan ```sort -gk2``` penyortingan atau pengurutan data berdasarkan ```k2``` __jumlah profit per region__  sesuai dengan ```-g``` _generic number_ . <br>
   
 
