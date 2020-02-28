@@ -28,7 +28,7 @@ laporan tersebut. Laporan yang diminta berupa :
   Setelah penyaringan data __region__ dan __jumlah profit per region__ telah didapatkan, proses dilanjutkan dengan ```sort -gk2``` penyortingan atau pengurutan data berdasarkan ```k2``` __jumlah profit per region__ (kolom kedua dari catatan input) sesuai dengan ```-g``` _generic number_ . <br>
   Setelah proses penyortingan telah selesai dilakukan, data yang telah terurut tersebut disaring kembali dengan ```awk``` dengan ```FNR < 2``` hanya mengambil __baris pertama__ saja. Dan di akhir proses, program ```{print$1}``` kolom pertama dari baris pertama yang telah disaring sebelumnya yaitu __region__ yang memiliki profit paling sedikit. 
   #### Output untuk 1A, B dan C :
-  ![Output](C:\Users\Acer Marvel\Documents\IT\SISTEM OPERASI\Shift_Modul1\Revisi_soal1.jpg
-  
+ ![Revisi_soal1](https://user-images.githubusercontent.com/49342639/75592123-128c0200-5ab4-11ea-9b04-f51bc513316b.jpg)
+
   
 
