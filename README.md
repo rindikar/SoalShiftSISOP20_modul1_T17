@@ -74,7 +74,7 @@ laporan tersebut. Laporan yang diminta berupa :
   
 ### Soal 2
 Pada suatu siang, laptop Randolf dan Afairuzr dibajak oleh seseorang dan kehilangan data-data penting. Untuk mencegah kejadian yang sama terulang kembali mereka meminta bantuan kepada Whits karena dia adalah seorang yang punya banyak ide. Whits memikirkan sebuah ide namun dia meminta bantuan kalian kembali agar idetersebut cepat diselesaikan. Idenya adalah :
-* ### Soal 2A
+* #### Soal 2A
   Kalian membuat sebuah script bash yang dapat menghasilkan password secara acak sebanyak 28 karakter yang terdapat huruf besar, huruf kecil, dan angka!
   #### Code : https://github.com/rindikar/SoalShiftSISOP20_modul1_T17/blob/master/Revisi_Soal2.sh
   #### Penyelesaian :
@@ -85,4 +85,4 @@ Pada suatu siang, laptop Randolf dan Afairuzr dibajak oleh seseorang dan kehilan
   ```
   * Pertama-tama, kita membuat file yang akan menyimpan susunan password sesuai dengan ketentuan yang telah ada. Disini kami membuat file bernama ```password```. <br>
   Command ```cat /dev/urandom``` digunakan untuk menerima data, baik berupa karakter maupun bilangan, random setiap saat. <br>
-  
+  Data yang telah diterima secara random tersebut dilakukan penyeleksian dengan command ```tr -dc 'a-zA-Z0-9'``` yaitu menghapus berbagai jenis karakter kecuali ```a-z``` huruf kecil, ```A-Z``` huruf besar dan ```0-9``` bilangan. <br>
