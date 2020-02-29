@@ -128,4 +128,10 @@ Pada suatu siang, laptop Randolf dan Afairuzr dibajak oleh seseorang dan kehilan
   Kemudian, data yang masuk dilakukan ```sort -n``` penyortingan atau pengurutan berdasarkan penomorannya dari yang terkecil ke terbesar.  <br>
   Command ```tail -1``` akan mengirim file __pdkt_kusuma__dengan penomoran paling akhir__ dan kemudian disimpan dalam variabel ```tes```. <br>
   Pada command ``` if [[ $tes < 1 ]] then tes=0 fi``` berarti bahwa jika file yang terdapat dalam variabel __tes__ kurang dari 1 maka 0 akan masuk dalam variabel __tes__ tersebut. <br>
-  
+  Setelah syarat di atas terpenuhi, maka akan terjadi proses _looping_ dari command di bawah ini :
+  ```bash
+  a=`expr $tes + 1`
+  b=`expr $tes + 29`
+  for ((i=a;i<b;i=i+1))
+  ``` 
+  yang berarti bahwa setiap nilai yang tersimpan di dalam variabel __tes__ akan ditambahkan dengan 1 ke __a__ dan juga ditambahkan dengan 29 ke __b__. 
