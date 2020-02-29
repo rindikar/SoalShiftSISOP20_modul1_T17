@@ -58,5 +58,10 @@ laporan tersebut. Laporan yang diminta berupa :
   echo "10 Produk profit terkecil: "
   awk -F '\t' 'NR > 1{if(( $11=="Illinois" || $11=="Texas" ) && $13=="Central" ){SUM[$17] +=$21}} END{for (j in SUM) print j", " SUM[j] | "sort -t ',' -g -k2"}' Sample-Superstore.tsv | head -n 10
   ```
+  * Pada ```echo "10 Produk profit terkecil: "``` akan menampilkan __10 produk profit terkecil__ dari kedua state yang memiliki profit terkecil yang didapatkan pada poin 1B. <br>
+  * Untuk mendapatkan 10 produk profit terkecil dari kedua state yang juga memiliki profit terkecil, maka kita menggunakan command ```awk``` untuk menyaring data tertentu dari suatu file. <br>
+   Command ```-F``` digunakan sebagai, _field separator_ , mengontrol cara __awk__ dalam memberikan suatu pemisah antar kalimat dari catatan input. <br>
+  Pemisah yang digunakan adalah __tab__ yang merupakan fungsi dari command ```'\t'```. <br>
+  Command ```NR > 1``` digunakan untuk menyimpan jumlah _record_ yang dibaca mulai dari kolom kedua dikarenakan kolom pertama merupakan header dari setiap kolom.  <br>
   #### Output untuk 1A, B dan C :
   ![Output_Soal1ABC](https://user-images.githubusercontent.com/49342639/75592811-e07b9f80-5ab5-11ea-9294-29d60e951c80.jpg)
