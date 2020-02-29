@@ -90,5 +90,4 @@ Pada suatu siang, laptop Randolf dan Afairuzr dibajak oleh seseorang dan kehilan
   Kita tidak memakai semua password dalam baris pertama hingga terakhir, namun kita hanya mengambil baris pertama saja. Maka, command ```head -n 1``` akan mengambil password yang telah terbuat dalam baris pertama catatan input. <br>
   Setelah proses pembuatan password selesai, program akan menjalankan command ```echo $password``` untuk menampilkan password yang telah terpilih melalui serangkaian proses pembuatan password yang telah dijelaskan di atas. <br>
    #### Output untuk 2A :
-   
-  
+   ![Revisi_Soal2A](https://user-images.githubusercontent.com/49342639/75603787-5c9cd400-5b04-11ea-982c-5aabca2d5370.png)
