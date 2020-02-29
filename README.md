@@ -51,8 +51,12 @@ laporan tersebut. Laporan yang diminta berupa :
     Kedua baris tersebut diurutkan lagi berdasarkan __jumlah profit per state__ dengan command ```sort -k2 ```. <br>
      Setelah proses penyortingan telah selesai dilakukan, data yang telah terurut tersebut disaring kembali dengan ```awk``` dengan ```FNR < 3``` menandakan bahwa program mengambil __baris pertama__ dan __baris kedua__.  Hal ini dikarenakan dua baris awal dari data penyortingan merupakan dua data terkecil. Dan di akhir proses, program ```{print$1$2}```  menampilkan kolom pertama dari kedua baris dan kolom kedua dari kedua baris yang telah disaring sebelumnya yaitu __2 state profit terkecil__. <br>
 * #### Soal 1C
-  Tampilkan 10 produk (product name) yang memiliki keuntungan (profit) paling sedikit berdasarkan 2 negara bagian (state) hasil poin __B__
+  Tampilkan 10 produk (product name) yang memiliki keuntungan (profit) paling sedikit berdasarkan 2 negara bagian (state) hasil poin __B__!
   #### Code : https://github.com/rindikar/SoalShiftSISOP20_modul1_T17/blob/master/Revisi_Soal1.sh
   #### Penyelesaian :
+  ```bash
+  echo "10 Produk profit terkecil: "
+  awk -F '\t' 'NR > 1{if(( $11=="Illinois" || $11=="Texas" ) && $13=="Central" ){SUM[$17] +=$21}} END{for (j in SUM) print j", " SUM[j] | "sort -t ',' -g -k2"}' Sample-Superstore.tsv | head -n 10
+  ```
   #### Output untuk 1A, B dan C :
   ![Output_Soal1ABC](https://user-images.githubusercontent.com/49342639/75592811-e07b9f80-5ab5-11ea-9294-29d60e951c80.jpg)
