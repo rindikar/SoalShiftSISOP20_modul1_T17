@@ -134,4 +134,6 @@ Pada suatu siang, laptop Randolf dan Afairuzr dibajak oleh seseorang dan kehilan
     b=`expr $tes + 29`
     for ((i=a;i<b;i=i+1))
     ``` 
-    yang berarti bahwa setiap nilai yang tersimpan di dalam variabel __tes__ akan ditambahkan dengan 1 ke __a__ dan juga ditambahkan dengan 29 ke __b__. 
+    yang berarti bahwa setiap nilai yang tersimpan di dalam variabel __tes__ akan ditambahkan dengan 1 ke __a__ dan juga ditambahkan dengan 29 ke __b__. <br>
+    Terakhir, terdapat command ``` wget -a wget.log -O "pdkt_kusuma_$i" https://loremflickr.com/320/240/cat``` yang bertujuan untuk mengunduh dengan catatan bahwa _output_ diganti __"pdkt_kusuma_$i"__ dari situs website https://loremflickr.com/320/240 dan memasukkannya ke dalam wget log. <br>
+    
