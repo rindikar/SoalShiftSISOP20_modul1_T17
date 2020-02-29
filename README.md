@@ -43,12 +43,7 @@ laporan tersebut. Laporan yang diminta berupa :
   Pemisah yang digunakan adalah __tab__ yang merupakan fungsi dari command ```'\t'```. <br>
   Command ```NR > 1``` digunakan untuk menyimpan jumlah _record_ yang dibaca mulai dari kolom kedua dikarenakan kolom pertama merupakan header dari setiap kolom.  <br>
   Sebelum mengetahui kolom mana saja yang dibaca, kita perlu mengetahui hasil dari poin __1A__ dimana region yang memiliki profit terkecil adalah __Central__ maka dengan adanya ```{if( $13=="Central" )``` menandakan bahwa program akan mengeksekusi dua kolom dari region _Central_ yaitu kolom __state__ dan kolom __profit__. <br>
-  
-  
-
+  Kedua kolom tersebut disimpan dalam ```{SUM[$11] +=$21}}``` __variabel SUM__ yang akan terdiri dari kolom __state__ (kolom ke-11) dan __jumlah profit per state__ (kolom ke-21). <br>
+  Setelah proses ```awk``` selesai, maka command ```END{for (j in SUM) print j, SUM[j]}``` dieksekusi agar dalam program tercatat semua __state__ disertai dengan __jumlah profit per state__.  Hal ini menjadikan catatan input terdiri atas dua kolom yaitu kolom pertama diisi dengan  __state__ dan kolom kedua diisi dengan __jumlah profit per state__. <br>
   #### Output untuk 1A, B dan C :
   ![Output_Soal1ABC](https://user-images.githubusercontent.com/49342639/75592811-e07b9f80-5ab5-11ea-9294-29d60e951c80.jpg)
-
-
-  
-
