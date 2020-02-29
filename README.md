@@ -27,6 +27,17 @@ laporan tersebut. Laporan yang diminta berupa :
   ```Sample-Superstore.tsv``` menunjukkan bahwa proses ```awk``` dieksekusi untuk data yang ada di dalam file bernama _Sample-Superstore.tsv_. <br>
   Setelah penyaringan data __region__ dan __jumlah profit per region__ telah didapatkan, proses dilanjutkan dengan ```sort -gk2``` penyortingan atau pengurutan data berdasarkan ```k2``` __jumlah profit per region__ (kolom kedua dari catatan input) sesuai dengan ```-g``` _generic number_ . <br>
   Setelah proses penyortingan telah selesai dilakukan, data yang telah terurut tersebut disaring kembali dengan ```awk``` dengan ```FNR < 2``` hanya mengambil __baris pertama__ saja. Dan di akhir proses, program ```{print$1}``` kolom pertama dari baris pertama yang telah disaring sebelumnya yaitu __region__ yang memiliki profit paling sedikit. 
+* #### Soal 1B
+  Tampilkan 2 negara bagian (state) yang memiliki keuntungan (profit) paling sedikit berdasarkan hasil poin __A__!
+  #### Code : https://github.com/rindikar/SoalShiftSISOP20_modul1_T17/blob/master/Revisi_Soal1.sh
+  #### Penyelesaian :
+  ```bash
+  echo "2 State profit terkecil: "
+  awk -F '\t' 'NR > 1{if( $13=="Central" ){SUM[$11] +=$21}} END{for (j in SUM) print j", " SUM[j] | "sort -t ',' -g -k2"}' Sample-  Superstore.tsv | head -n 2
+  #| sort -k2 
+  #| awk FNR < 3{print$1$2$3$4$5}'
+  ```
+
   #### Output untuk 1A, B dan C :
   ![Output_Soal1ABC](https://user-images.githubusercontent.com/49342639/75592811-e07b9f80-5ab5-11ea-9294-29d60e951c80.jpg)
 
