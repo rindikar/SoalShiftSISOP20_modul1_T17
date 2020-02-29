@@ -127,3 +127,5 @@ Pada suatu siang, laptop Randolf dan Afairuzr dibajak oleh seseorang dan kehilan
   Isi file teks dengan nama  __pdkt_kusuma___ terdiri atas tiga kolom yaitu __pdkt__ (kolom pertama), __kusuma__ (kolom kedua) dan __penomoran__ untuk setiap isi dari file tersebut (kolom ketiga). Setiap kolom dipisahkan ```-d``` dengan karakter ```"_"```. Isi file dengan nama __pdkt_kusuma__ sangatlah banyak, oleh karena itu dibutuhkan penomoran untuk setiap file yang masuk. Penomoran ini diletakkan pada kolom ketiga sehingga diperlukan pemotongan pada kolom ketiga menggunakan command ```-f 3```. <br>
   Kemudian, data yang masuk dilakukan ```sort -n``` penyortingan atau pengurutan berdasarkan penomorannya dari yang terkecil ke terbesar.  <br>
   Command ```tail -1``` akan mengirim file __pdkt_kusuma__dengan penomoran paling akhir__ dan kemudian disimpan dalam variabel ```tes```. <br>
+  Pada command ``` if [[ $tes < 1 ]] then tes=0 fi``` berarti bahwa jika file yang terdapat dalam variabel __tes__ kurang dari 1 maka 0 akan masuk dalam variabel __tes__ tersebut. <br>
+  
