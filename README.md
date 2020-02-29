@@ -86,3 +86,9 @@ Pada suatu siang, laptop Randolf dan Afairuzr dibajak oleh seseorang dan kehilan
   * Pertama-tama, kita membuat file yang akan menyimpan susunan password sesuai dengan ketentuan yang telah ada. Disini kami membuat file bernama ```password```. <br>
   Command ```cat /dev/urandom``` digunakan untuk menerima data, baik berupa karakter maupun bilangan, random setiap saat. <br>
   Data yang telah diterima secara random tersebut dilakukan penyeleksian dengan command ```tr -dc 'a-zA-Z0-9'``` yaitu menghapus berbagai jenis karakter kecuali ```a-z``` huruf kecil, ```A-Z``` huruf besar dan ```0-9``` bilangan. <br>
+  Hingga proses ini, catatan input password sangat banyak. Oleh karena itu, setiap baris dibatasi dengan 28 karakter, sehingga dengan command ```fold -w 28``` menjadikan setiap 28 karakter baru akan selalu terbuat dalam baris baru. <br>
+  Kita tidak memakai semua password dalam baris pertama hingga terakhir, namun kita hanya mengambil baris pertama saja. Maka, command ```head -n 1``` akan mengambil password yang telah terbuat dalam baris pertama catatan input. <br>
+  Setelah proses pembuatan password selesai, program akan menjalankan command ```echo $password``` untuk menampilkan password yang telah terpilih melalui serangkaian proses pembuatan password yang telah dijelaskan di atas. <br>
+   #### Output untuk 2A :
+   
+  
