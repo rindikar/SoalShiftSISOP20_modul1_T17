@@ -148,3 +148,7 @@ Pada suatu siang, laptop Randolf dan Afairuzr dibajak oleh seseorang dan kehilan
 * #### Soal 3C
   Maka dari itu, buatlah sebuah script untuk mengidentifikasi gambar yang identik dari keseluruhan gambar yang terdownload tadi. Bila terindikasi sebagai gambar yang identik, maka sisakan 1 gambar dan pindahkan sisa file identik tersebut ke dalam folder ./duplicate dengan format filename "duplicate_nomor" (contoh : duplicate_200, duplicate_201). Setelah itu lakukan pemindahan semua gambar yang tersisa kedalam folder ./kenangan dengan format filename "kenangan_nomor" (contoh: kenangan_252, kenangan_253). Setelah tidak ada gambar di current directory, maka lakukan backup seluruh log menjadi ekstensi ".log.bak". <br>  
   
+### Kendala yang dialami :
+1. Soal Shift modul 1 ini dapat dikatakan susah.
+2. Mohon konsistensi dari para asisten ketika mengunggah file yang dijadikan tugas, _jangan H-1 pengumpulan terjadi pergantian file yang dijadikan soal_
+3. Di salah satu laptop kami, ubuntu tidak dapat dibuka. Sudah berkali-kali install tetapi tetap tidak ada perubahan. 
