@@ -122,4 +122,5 @@ Pada suatu siang, laptop Randolf dan Afairuzr dibajak oleh seseorang dan kehilan
   wget -a wget.log -O "pdkt_kusuma_$i" https://loremflickr.com/320/240/cat
   done
   ```
-  * Awalnya, kita perlu mempunyai suatu command yang bertujuan untuk membuat daftar informasi tentang file dan direktori dalam sistem file. Command untuk menjalankan perintah tersebut adalah command ```ls``` yang kami gunakan pada _code_. 
+  * Awalnya, kita perlu mempunyai suatu command yang bertujuan untuk membuat daftar informasi tentang file dan direktori dalam sistem file. Command untuk menjalankan perintah tersebut adalah command ```ls``` yang kami gunakan pada _code_. <br>
+  Command ```grep "pdkt_kusuma_"``` akan mencari isi file teks dengan nama __pdkt_kusuma___. <br>
