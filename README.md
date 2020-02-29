@@ -47,6 +47,8 @@ laporan tersebut. Laporan yang diminta berupa :
   Setelah proses ```awk``` selesai, maka command ```END{for (j in SUM) print j, SUM[j]}``` dieksekusi agar dalam program tercatat semua __state__ disertai dengan __jumlah profit per state__.  Hal ini menjadikan catatan input terdiri atas dua kolom yaitu kolom pertama diisi dengan  __state__ dan kolom kedua diisi dengan __jumlah profit per state__. <br>
    Setelah penyaringan data __state__ dan __jumlah profit per state__ telah didapatkan, proses dilanjutkan dengan ```sort -t ',' -g -k2``` penyortingan atau pengurutan data __state__ dengan disertai pemisah ```-t ','``` berdasarkan ```k2``` __jumlah profit per state__ (kolom kedua dari catatan input) sesuai dengan ```-g``` _generic number_ . <br>
     ```Sample-Superstore.tsv``` menunjukkan bahwa proses ```awk``` dieksekusi untuk data yang ada di dalam file bernama _Sample-Superstore.tsv_. <br>
-    Setelah data penyortingan kedua kolom didapatkan yakni kolom __state__ dan kolom __jumlah profit per state__, proses dilanjutkan dengan ```head -n 2``` yaitu melihat isi dua baris awal dari kedua kolom dalam data penyortingan tersebut. 
+    Setelah data penyortingan kedua kolom didapatkan yakni kolom __state__ dan kolom __jumlah profit per state__, proses dilanjutkan dengan ```head -n 2``` yaitu melihat isi dua baris awal dari kedua kolom dalam data penyortingan tersebut. <br>
+    Kedua baris tersebut diurutkan lagi berdasarkan __jumlah profit per state__ dengan command ```sort -k2 ```. <br>
+    
   #### Output untuk 1A, B dan C :
   ![Output_Soal1ABC](https://user-images.githubusercontent.com/49342639/75592811-e07b9f80-5ab5-11ea-9294-29d60e951c80.jpg)
