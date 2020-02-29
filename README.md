@@ -35,7 +35,7 @@ laporan tersebut. Laporan yang diminta berupa :
   echo "2 State profit terkecil: "
   awk -F '\t' 'NR > 1{if( $13=="Central" ){SUM[$11] +=$21}} END{for (j in SUM) print j", " SUM[j] | "sort -t ',' -g -k2"}' Sample-  Superstore.tsv | head -n 2
   #| sort -k2 
-  #| awk FNR < 3{print$1$2$3$4$5}'
+  #| awk FNR < 3{print$1$2}'
   ```
   * Pada ```echo "2 State profit terkecil: "``` akan menampilkan __2 state profit terkecil__ dari region yang didapatkan pada poin 1A. 
   * Untuk mencari dua state yang memiliki profit terkecil dari region yang juga memiliki profit terkecil, maka kita juga menggunakan command ```awk``` guna mampu melakukan penyaringan data tertentu dari suatu file. <br>
@@ -49,6 +49,6 @@ laporan tersebut. Laporan yang diminta berupa :
     ```Sample-Superstore.tsv``` menunjukkan bahwa proses ```awk``` dieksekusi untuk data yang ada di dalam file bernama _Sample-Superstore.tsv_. <br>
     Setelah data penyortingan kedua kolom didapatkan yakni kolom __state__ dan kolom __jumlah profit per state__, proses dilanjutkan dengan ```head -n 2``` yaitu melihat isi dua baris awal dari kedua kolom dalam data penyortingan tersebut. <br>
     Kedua baris tersebut diurutkan lagi berdasarkan __jumlah profit per state__ dengan command ```sort -k2 ```. <br>
-    
+     Setelah proses penyortingan telah selesai dilakukan, data yang telah terurut tersebut disaring kembali dengan ```awk``` dengan ```FNR < 3``` menandakan bahwa program mengambil __baris pertama__ dan __baris kedua__.  Hal ini dikarenakan dua baris awal dari data penyortingan merupakan dua data terkecil. Dan di akhir proses, program ```{print$1$2}```  menampilkan kolom pertama dari kedua baris dan kolom kedua dari kedua baris yang telah disaring sebelumnya yaitu __2 state profit terkecil__. <br>
   #### Output untuk 1A, B dan C :
   ![Output_Soal1ABC](https://user-images.githubusercontent.com/49342639/75592811-e07b9f80-5ab5-11ea-9294-29d60e951c80.jpg)
