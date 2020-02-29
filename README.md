@@ -71,3 +71,12 @@ laporan tersebut. Laporan yang diminta berupa :
     Setelah data penyortingan kedua kolom didapatkan yakni kolom __product__ dan kolom __jumlah profit per product__, proses dilanjutkan dengan ```head -n 10``` yaitu mengambil isi 10 baris awal dari kedua kolom dalam data penyortingan tersebut. Hal ini menjadikan program berhasil mendapatkan 10 product apa saja yang memiliki profit terkecil dari kedua state yang juga memiliki profit terkecil. <br>
   #### Output untuk 1A, B dan C :
   ![Output_Soal1ABC](https://user-images.githubusercontent.com/49342639/75592811-e07b9f80-5ab5-11ea-9294-29d60e951c80.jpg)
+  
+### Soal 2
+Pada suatu siang, laptop Randolf dan Afairuzr dibajak oleh seseorang dan kehilangan data-data penting. Untuk mencegah kejadian yang sama terulang kembali mereka meminta bantuan kepada Whits karena dia adalah seorang yang punya banyak ide. Whits memikirkan sebuah ide namun dia meminta bantuan kalian kembali agar idetersebut cepat diselesaikan. Idenya adalah :
+* ### Soal 2A
+  Kalian membuat sebuah script bash yang dapat menghasilkan password secara acak sebanyak 28 karakter yang terdapat huruf besar, huruf kecil, dan angka!
+  #### Code : https://github.com/rindikar/SoalShiftSISOP20_modul1_T17/blob/master/Revisi_Soal2.sh
+  #### Penyelesaian :
+  
+
