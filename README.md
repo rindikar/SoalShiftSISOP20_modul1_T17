@@ -143,5 +143,7 @@ Pada suatu siang, laptop Randolf dan Afairuzr dibajak oleh seseorang dan kehilan
   #### Code : https://github.com/bagasimmanuel/SoalShiftSISOP20_modul1_T11/blob/master/Shift/soal3/crontab%203b%20.txt
   #### Penyelesaian :
   ```5 6-23/8 * * 0-5 /bin/bash ~/SoalShiftSISOP20_modul1_T11/Shift/soal3.sh```
-  * ```5``` pada __kolom pertama__ menandakan bahwa penjadwalan pengunduhan terjadi setiap menit ke-__5__, ```6-23/8``` pada __kolom kedua__ menandakan bahwa penjadwalan pengunduhan terjadi pada setiap 8 jam dari __jam 6 hinggan jam 23__, ```*``` pada __kolom ketiga__ menandakan bahwa __tanggal bebas__,
+  * ```5``` pada __kolom pertama__ menandakan bahwa penjadwalan pengunduhan terjadi setiap menit ke-__5__, ```6-23/8``` pada __kolom kedua__ menandakan bahwa penjadwalan pengunduhan terjadi pada setiap 8 jam dari __jam 6 hingga jam 23__, ```*``` pada __kolom ketiga__ menandakan bahwa __tanggal bebas__, ```*``` pada __kolom keempat__ menandakan bahwa __bulan bebas__, dan ```0-5``` menandakan bahwa penjadwalan pengunduhan terjadi setiap __hari minggu hingga jum'at__ _kecuali hari sabtu_. <br>
+  ```~/SoalShiftSISOP20_modul1_T11/Shift/soal3.sh``` digunakan untuk menjalankan _bash script_ __soal3.sh__ yang terdapat di dalam direktori tersebut. <br>
+  
   
