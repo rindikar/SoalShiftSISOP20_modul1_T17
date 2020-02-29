@@ -50,5 +50,9 @@ laporan tersebut. Laporan yang diminta berupa :
     Setelah data penyortingan kedua kolom didapatkan yakni kolom __state__ dan kolom __jumlah profit per state__, proses dilanjutkan dengan ```head -n 2``` yaitu melihat isi dua baris awal dari kedua kolom dalam data penyortingan tersebut. <br>
     Kedua baris tersebut diurutkan lagi berdasarkan __jumlah profit per state__ dengan command ```sort -k2 ```. <br>
      Setelah proses penyortingan telah selesai dilakukan, data yang telah terurut tersebut disaring kembali dengan ```awk``` dengan ```FNR < 3``` menandakan bahwa program mengambil __baris pertama__ dan __baris kedua__.  Hal ini dikarenakan dua baris awal dari data penyortingan merupakan dua data terkecil. Dan di akhir proses, program ```{print$1$2}```  menampilkan kolom pertama dari kedua baris dan kolom kedua dari kedua baris yang telah disaring sebelumnya yaitu __2 state profit terkecil__. <br>
+* #### Soal 1C
+  Tampilkan 10 produk (product name) yang memiliki keuntungan (profit) paling sedikit berdasarkan 2 negara bagian (state) hasil poin __B__
+  #### Code : https://github.com/rindikar/SoalShiftSISOP20_modul1_T17/blob/master/Revisi_Soal1.sh
+  #### Penyelesaian :
   #### Output untuk 1A, B dan C :
   ![Output_Soal1ABC](https://user-images.githubusercontent.com/49342639/75592811-e07b9f80-5ab5-11ea-9294-29d60e951c80.jpg)
