@@ -38,7 +38,13 @@ laporan tersebut. Laporan yang diminta berupa :
   #| awk FNR < 3{print$1$2$3$4$5}'
   ```
   * Pada ```echo "2 State profit terkecil: "``` akan menampilkan __2 state profit terkecil__ dari region yang didapatkan pada poin 1A. 
-  * Untuk mencari dua state yang memiliki profit terkecil dsri region yang juga memiliki profit terkecil, maka kita juga menggunakan command ```awk```. 
+  * Untuk mencari dua state yang memiliki profit terkecil dari region yang juga memiliki profit terkecil, maka kita juga menggunakan command ```awk``` guna mampu melakukan penyaringan data tertentu dari suatu file. <br>
+   Command ```-F``` digunakan sebagai, _field separator_ , mengontrol cara __awk__ dalam memberikan suatu pemisah antar kalimat dari catatan input. <br>
+  Pemisah yang digunakan adalah __tab__ yang merupakan fungsi dari command ```'\t'```. <br>
+  Command ```NR > 1``` digunakan untuk menyimpan jumlah _record_ yang dibaca mulai dari kolom kedua dikarenakan kolom pertama merupakan header dari setiap kolom.  <br>
+  Sebelum mengetahui kolom mana saja yang dibaca, kita perlu mengetahui hasil dari poin __1A__ dimana region yang memiliki profit terkecil adalah __Central__ maka dengan adanya ```{if( $13=="Central" )``` menandakan bahwa program akan mengeksekusi dua kolom dari region _Central_ yaitu kolom __state__ dan kolom __profit__. <br>
+  
+  
 
   #### Output untuk 1A, B dan C :
   ![Output_Soal1ABC](https://user-images.githubusercontent.com/49342639/75592811-e07b9f80-5ab5-11ea-9294-29d60e951c80.jpg)
