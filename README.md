@@ -103,3 +103,22 @@ Pada suatu siang, laptop Randolf dan Afairuzr dibajak oleh seseorang dan kehilan
 1 tahun telah berlalu sejak pencampakan hati Kusuma. Akankah sang pujaan hati kembali ke naungan Kusuma? Memang tiada maaf bagi Elen. Tapi apa daya hati yang sudah hancur, Kusuma masih terguncang akan sikap Elen. Melihat kesedihan Kusuma, kalian mencoba menghibur Kusuma dengan mengirimkan gambar kucing.
 * #### Soal 3A
   Maka dari itu, kalian mencoba membuat script untuk mendownload 28 gambar dari __https://loremflickr.com/320/240/cat__ menggunakan command wget dan menyimpan file dengan nama "pdkt_kusuma_NO" (contoh: pdkt_kusuma_1, pdkt_kusuma_2, pdkt_kusuma_3) serta jangan lupa untuk menyimpan log messages wget kedalam sebuah file "wget.log".
+  #### Code : https://github.com/rindikar/SoalShiftSISOP20_modul1_T17/blob/master/Revisi_Soal3.sh
+  #### Penyelesaian :
+  ```bash
+  tes=`ls | grep "pdkt_kusuma_" | cut -d "_" -f 3 | sort -n | tail -1`
+  echo $tes
+
+  if [[ $tes < 1 ]]
+  then
+  tes=0
+  fi
+
+  a=`expr $tes + 1`
+  b=`expr $tes + 29`
+
+  for ((i=a;i<b;i=i+1))
+  do
+  wget -a wget.log -O "pdkt_kusuma_$i" https://loremflickr.com/320/240/cat
+  done
+  ```
