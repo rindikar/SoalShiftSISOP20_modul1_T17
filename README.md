@@ -124,3 +124,4 @@ Pada suatu siang, laptop Randolf dan Afairuzr dibajak oleh seseorang dan kehilan
   ```
   * Awalnya, kita perlu mempunyai suatu command yang bertujuan untuk membuat daftar informasi tentang file dan direktori dalam sistem file. Command untuk menjalankan perintah tersebut adalah command ```ls``` yang kami gunakan pada _code_. <br>
   Command ```grep "pdkt_kusuma_"``` akan mencari isi file teks dengan nama __pdkt_kusuma___. <br>
+  Isi file teks dengan nama  __pdkt_kusuma___ terdiri atas tiga kolom yaitu __pdkt__ (kolom pertama), __kusuma__ (kolom kedua) dan __penomoran__ untuk setiap isi dari file tersebut (kolom ketiga). Setiap kolom dipisahkan ```-d``` dengan karakter ```"_"```. 
