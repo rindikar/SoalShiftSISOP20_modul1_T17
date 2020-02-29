@@ -37,6 +37,8 @@ laporan tersebut. Laporan yang diminta berupa :
   #| sort -k2 
   #| awk FNR < 3{print$1$2$3$4$5}'
   ```
+  * Pada ```echo "2 State profit terkecil: "``` akan menampilkan __2 state profit terkecil__ dari region yang didapatkan pada poin 1A. 
+  * Untuk mencari dua state yang memiliki profit terkecil dsri region yang juga memiliki profit terkecil, maka kita juga menggunakan command ```awk```. 
 
   #### Output untuk 1A, B dan C :
   ![Output_Soal1ABC](https://user-images.githubusercontent.com/49342639/75592811-e07b9f80-5ab5-11ea-9294-29d60e951c80.jpg)
