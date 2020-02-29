@@ -145,5 +145,6 @@ Pada suatu siang, laptop Randolf dan Afairuzr dibajak oleh seseorang dan kehilan
   ```5 6-23/8 * * 0-5 /bin/bash ~/SoalShiftSISOP20_modul1_T11/Shift/soal3.sh```
   * ```5``` pada __kolom pertama__ menandakan bahwa penjadwalan pengunduhan terjadi setiap menit ke-__5__, ```6-23/8``` pada __kolom kedua__ menandakan bahwa penjadwalan pengunduhan terjadi pada setiap 8 jam dari __jam 6 hingga jam 23__, ```*``` pada __kolom ketiga__ menandakan bahwa __tanggal bebas__, ```*``` pada __kolom keempat__ menandakan bahwa __bulan bebas__, dan ```0-5``` menandakan bahwa penjadwalan pengunduhan terjadi setiap __hari minggu hingga jum'at__ _kecuali hari sabtu_. <br>
   ```~/SoalShiftSISOP20_modul1_T11/Shift/soal3.sh``` digunakan untuk menjalankan _bash script_ __soal3.sh__ yang terdapat di dalam direktori tersebut. <br>
-  
+* #### Soal 3C
+  Maka dari itu, buatlah sebuah script untuk mengidentifikasi gambar yang identik dari keseluruhan gambar yang terdownload tadi. Bila terindikasi sebagai gambar yang identik, maka sisakan 1 gambar dan pindahkan sisa file identik tersebut ke dalam folder ./duplicate dengan format filename "duplicate_nomor" (contoh : duplicate_200, duplicate_201). Setelah itu lakukan pemindahan semua gambar yang tersisa kedalam folder ./kenangan dengan format filename "kenangan_nomor" (contoh: kenangan_252, kenangan_253). Setelah tidak ada gambar di current directory, maka lakukan backup seluruh log menjadi ekstensi ".log.bak". <br>  
   
