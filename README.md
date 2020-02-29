@@ -91,3 +91,10 @@ Pada suatu siang, laptop Randolf dan Afairuzr dibajak oleh seseorang dan kehilan
   Setelah proses pembuatan password selesai, program akan menjalankan command ```echo $password``` untuk menampilkan password yang telah terpilih melalui serangkaian proses pembuatan password yang telah dijelaskan di atas. <br>
    #### Output untuk 2A :
    ![Revisi_Soal2A](https://user-images.githubusercontent.com/49342639/75603787-5c9cd400-5b04-11ea-982c-5aabca2d5370.png)
+   
+* #### Soal 2B :
+  Password acak tersebut disimpan pada file berekstensi __.txt___ dengan nama berdasarkan argumen yang diinputkan dan HANYA berupa alphabet!
+* #### Soal 2C :
+  Kemudian supaya file .txt tersebut tidak mudah diketahui maka nama filenya akan dienkripsi dengan menggunakan konversi huruf (string manipulation) yang disesuaikan dengan jam(0-23) dibuatnya file tersebut dengan program terpisah dengan (misal: password.txt dibuat pada jam 01.28 maka namanya berubah menjadi qbttxpse.txt dengan perintah ‘bash soal2_enkripsi.sh password.txt’. Karena p adalah huruf ke 16 dan file dibuat pada jam 1 maka 16+1=17 dan huruf ke 17 adalah q dan begitu pula seterusnya. Apabila melebihi z, akan kembali ke a, contoh: huruf w dengan jam 5.28, maka akan menjadi huruf b.
+* #### Soal 2D :
+  Membuat dekripsinya supaya nama file bisa kembali.
