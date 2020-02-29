@@ -138,5 +138,10 @@ Pada suatu siang, laptop Randolf dan Afairuzr dibajak oleh seseorang dan kehilan
     Terakhir, terdapat command ``` wget -a wget.log -O "pdkt_kusuma_$i" https://loremflickr.com/320/240/cat``` yang bertujuan untuk mengunduh dengan catatan bahwa _output_ diganti __"pdkt_kusuma_$i"__ dari situs website https://loremflickr.com/320/240 dan memasukkannya ke dalam wget log. <br>
    #### Output untuk 3A :
    ![Revisi_Soal3A](https://user-images.githubusercontent.com/49342639/75605674-48160700-5b17-11ea-92f4-c48e87786872.jpg)
-
-    
+* #### Soal 3B  
+  Karena kalian gak suka ribet, kalian membuat penjadwalan untuk menjalankan script download gambar tersebut. Namun, script download tersebut hanya berjalan, setiap 8 jam dimulai dari jam 6.05 setiap hari kecuali hari Sabtu Karena gambar yang didownload dari link tersebut bersifat random, maka ada kemungkinan gambar yang terdownload itu identik. Supaya gambar yang identik tidak dikira Kusuma sebagai spam, maka diperlukan sebuah script untuk memindahkan salah satu gambar identik. Setelah memilah gambar yang identik, maka dihasilkan gambar yang berbeda antara satu dengan yang lain. Gambar yang berbeda tersebut, akan kalian kirim ke Kusuma supaya hatinya kembali ceria. Setelah semua gambar telah dikirim, kalian akan selalu menghibur Kusuma, jadi gambar yang telah terkirim tadi akan kalian simpan ke dalam folder /kenangan dan kalian bisa mendownload gambar baru lagi.
+  #### Code : https://github.com/bagasimmanuel/SoalShiftSISOP20_modul1_T11/blob/master/Shift/soal3/crontab%203b%20.txt
+  #### Penyelesaian :
+  ```5 6-23/8 * * 0-5 /bin/bash ~/SoalShiftSISOP20_modul1_T11/Shift/soal3.sh```
+  * ```5``` pada __kolom pertama__ menandakan bahwa penjadwalan pengunduhan terjadi setiap menit ke-__5__, ```6-23/8``` pada __kolom kedua__ menandakan bahwa penjadwalan pengunduhan terjadi pada setiap 8 jam dari __jam 6 hinggan jam 23__, ```*``` pada __kolom ketiga__ menandakan bahwa __tanggal bebas__,
+  
